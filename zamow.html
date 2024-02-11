@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamów - SnagzBurger</title>
+    <link rel="stylesheet" href="styles5.css">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+</head>
+<body>
+
+<header id="flex-center">
+    <a id="logo" href="index.html"><img src="logo.png"></a>
+</header>
+
+<section>
+    <h1>Złóż zamówienie tutaj!</h1>
+    <form id="orderForm">
+        <label for="menuItems">Wybierz pozycję z menu:</label>
+        <select id="menuItems">
+            <option value="Mocarny Snagzer">Mocarny Snagser</option>
+            <option value="Masny Snagzbeef">Masny Snagzbeef</option>
+            <option value="American Snagz">American Snagz</option>
+            <option value="Snagzior BBQ ">Snagzior BBQ </option>
+            <option value="Góralski Snagzbeff">Góralski Snagzbeff</option>
+            <option value="Hot Snagzbomba">Hot Snagzbomba</option>
+            <option value="ItaloSnagzo">ItaloSnagzo</option>
+            <option value="KiddoSnagz">KiddoSnagz</option>
+        </select>
+
+        <label for="address">Adres dostawy:</label>
+        <input type="text" id="address" placeholder="Wprowadź adres dostawy" required>
+
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" id="phone" placeholder="Wprowadź numer telefonu" required>
+
+        <label for="blik">Kod Blik:</label>
+        <input type="text" id="blik" placeholder="Wprowadź kod Blik" required>
+
+        <button onclick="placeOrder()">Zamów</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2024 Restauracja SnagzBurger | Kontakt: snagzburger@gmail.com
+</footer>
+
+<script>
+    function placeOrder() {
+        alert('Zamówienie złożone pomyślnie!');
+    }
+</script>
+
+</body>
+</html>
